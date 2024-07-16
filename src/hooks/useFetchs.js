@@ -35,7 +35,7 @@ const useFetch = (baseUrl) => {
       }
 
       const res = await response.json();
-      getApi("products")
+      getApi("products");
       return res;
     } catch (err) {
       console.error("Fetch Error:", err);
@@ -74,7 +74,7 @@ const useFetch = (baseUrl) => {
         console.log(status);
         return status;
       }
-      } catch (err) {
+    } catch (err) {
       console.error("Fetch Error:", err);
       return null;
     }
@@ -113,12 +113,6 @@ const useFetch = (baseUrl) => {
     }
   };
 
-  return [
-    infoApi,
-    getApi,
-    createNewProduct,
-    updateProduct,
-    deleteProduct,
-  ];
+  return [infoApi, getApi, createNewProduct, updateProduct, deleteProduct];
 };
 export default useFetch;

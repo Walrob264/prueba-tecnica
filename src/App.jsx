@@ -80,18 +80,18 @@ export default function App() {
           handleSearchQuery={handleSearchQuery}
           setOpenForm={setOpenForm}
         ></Header>
-        <Body 
-          filteredProducts = {filteredProducts}
-          setEditForm = {setEditForm}
-          searchQuery = {searchQuery}
-          setProductSelected = {setProductSelected}
-          setWindowsDelete = {setWindowsDelete}
-          pag = {pag}
-          setPag = {setPag}
-          max = {max} 
-          productsPerPage = {productsPerPage}
+        <Body
+          filteredProducts={filteredProducts}
+          setEditForm={setEditForm}
+          searchQuery={searchQuery}
+          setProductSelected={setProductSelected}
+          setWindowsDelete={setWindowsDelete}
+          pag={pag}
+          setPag={setPag}
+          max={max}
+          productsPerPage={productsPerPage}
         ></Body>
       </div>
     </>
   );
-};
+}

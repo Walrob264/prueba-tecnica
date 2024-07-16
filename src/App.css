@@ -1,8 +1,14 @@
 .App {
   text-align: center;
   height: 100vh;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(69,76,89,1) 68%, rgba(64,64,71,1) 81%, rgba(40,44,52,1) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(69, 76, 89, 1) 68%,
+    rgba(64, 64, 71, 1) 81%,
+    rgba(40, 44, 52, 1) 100%
+  );
 }
 
 .App-logo {
@@ -12,7 +18,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 

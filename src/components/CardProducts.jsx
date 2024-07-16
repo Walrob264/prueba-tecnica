@@ -1,9 +1,9 @@
 export default function CardProducts({
-    product,
-    setProductSelected,
-    editForm,
-    setWindowsDelete,
-  }) {
+  product,
+  setProductSelected,
+  editForm,
+  setWindowsDelete,
+}) {
   return (
     <>
       <div class="card" style={style.cardStyle}>
@@ -13,7 +13,7 @@ export default function CardProducts({
           src={product.image}
           alt=""
         />
-        <div class="card-body" >
+        <div class="card-body">
           <div style={style.containtText}>
             <h2 class="card-title">{product.name}</h2>
             <h3 class="card-text">S/. {product.price}</h3>
@@ -28,17 +28,17 @@ export default function CardProducts({
               }}
               style={style.buttomStyle}
             >
-            Editar
+              Editar
             </button>
             <button
               class="btn btn-primary"
-                onClick={() => {
+              onClick={() => {
                 setProductSelected(product);
                 setWindowsDelete(true);
               }}
               style={style.buttomStyle}
             >
-            Eliminar
+              Eliminar
             </button>
           </div>
         </div>
@@ -47,32 +47,31 @@ export default function CardProducts({
   );
 }
 
-const style =  {
+const style = {
   cardStyle: {
     background: "white",
-    display: "flex", 
+    display: "flex",
     flexDirection: "row",
     height: "250px",
     width: "400px",
-    padding: "0.5em"
+    padding: "0.5em",
   },
   containtText: {
     display: "flex",
     flexDirection: "column",
     fontSize: "1em",
     gap: "1em",
-    paddingBottom: "1.5em"
+    paddingBottom: "1.5em",
   },
   imgStyle: {
     width: "150px",
   },
   buttomStyle: {
-    width: "85px"
+    width: "85px",
   },
   containtButtom: {
-    display: "flex", 
-    gap: "0.5em", 
-    justifyContent: "center"
-  }
+    display: "flex",
+    gap: "0.5em",
+    justifyContent: "center",
+  },
 };
-
